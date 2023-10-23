@@ -6,7 +6,7 @@ SELECT release_date FROM albums WHERE album = 'Sgt. Pepper''s Lonely Hearts Club
 
 SELECT genre FROM albums WHERE album = 'Nevermind';
 
-SELECT * FROM albums WHERE release_date >= 1990 and release_date < 2000;
+SELECT * FROM albums WHERE release_date between 1990 and 1999;
 
 SELECT  * FROM albums WHERE sales < 20.0;
 
