@@ -6,7 +6,7 @@ SELECT * FROM employees WHERE gender = 'M' AND first_name = 'Irene' OR gender = 
 
 -- SELECT * FROM employees WHERE last_name like 'E%';
 
-SELECT * FROM employees WHERE last_name like 'E%' AND last_name like '%e';
+SELECT * FROM employees WHERE last_name LIKE 'E%' AND last_name LIKE '%e';
 
-SELECT * FROM employees WHERE last_name like '%q%' AND last_name NOT LIKE '%qu%';
+SELECT * FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
 
