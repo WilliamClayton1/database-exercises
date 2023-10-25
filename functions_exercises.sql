@@ -8,3 +8,4 @@ SELECT * FROM employees WHERE YEAR(hire_date) LIKE '199%' AND MONTH(birth_date) 
 
 SELECT * FROM employees WHERE YEAR(hire_date) LIKE '199%' AND MONTH(birth_date) = 12 AND DAY(birth_date) = 25 ORDER BY YEAR(birth_date) ASC, YEAR(hire_date) DESC;
 
+SELECT DATEDIFF(CURDATE(), hire_date) AS number_of_days_worked FROM employees WHERE YEAR(hire_date) LIKE '199%' AND MONTH(birth_date) = 12 AND DAY(birth_date) = 25;
