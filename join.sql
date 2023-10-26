@@ -50,4 +50,12 @@ ON users.role_id = roles.id;
 SELECT users.name, roles.name
 FROM users
 RIGHT JOIN roles
+ON users.role_id = roles.id;
+
+-- Number of user assigned to a role
+SELECT DISTINCT roles.name, COUNT(users.role_id) AS role_count
+FROM users
+JOIN roles
 ON users.role_id = roles.id
+GROUP BY users.role_id;
+
